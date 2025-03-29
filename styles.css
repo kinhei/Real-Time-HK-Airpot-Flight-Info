@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+main {
+  padding: 20px;
+}
+
+/* Heading Styling */
+header {
+  background-color: rgb(229, 203, 169);
+  color: rgb(211, 151, 86);
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* toggle button setting */
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: rgb(64, 122, 230);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* control-line-container styling */
+.control-line-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Current date display styling */
+.current-date-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Search section styling */
+.search-section {
+  margin-bottom: 20px;
+}
+
+/* Flight Info section styling */
+.flight-info-section {
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: antiquewhite;
+}
+/* Flight box styling */
+#flight-detail {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  justify-content: space-around; /* Align items to the start of the container */
+  margin-bottom: 10px;
+}
+.flights {
+  padding: 10px;
+  margin: 10px;
+  background-color: #f1ede5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: calc(40% - 20px); /* Adjust based on how many boxes you want per row */
+  min-width: 300px;
+  max-width: 700px;
+}
+
+#flight-type {
+  font-weight: bold;
+}
+
+/* responsive design */
+
+/* Mobile view (350px to 500px) */
+@media (min-width: 350px) and (max-width: 500px) {
+  main {
+    width: 100%;
+    margin-left: 10px;
+  }
+  /* mobile design hidden info */
+  .hidden {
+    display: none; /* Hide elements */
+  }
+}
+/* Tablet view (500px to 000px) */
+@media (min-width: 501px) and (max-width: 999px) {
+  main {
+    width: 90%;
+  }
+}
+
+/* Medium screens (1000px) */
+@media (min-width: 1000px) {
+  main {
+    width: 85%;
+  }
+}
+
+#Departure-toggle {
+  text-decoration: underline;
+}

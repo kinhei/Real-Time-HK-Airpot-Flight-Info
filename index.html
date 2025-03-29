@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hong Kong International Airport Flight Information</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hong Kong International Airport Flight Information</h1>
+    </header>
+
+    <main>
+      <section class="current-date-display">
+        <p id="current-date"></p>
+      </section>
+
+      <section class="control-line-container">
+        <section id="flight-toggle">
+          <span id="Departure-toggle"> Departure </span>
+          <label class="switch">
+            <input type="checkbox" id="flight-switch" />
+            <span class="slider round"></span>
+          </label>
+          <span id="Arrival-toggle">Arrival</span>
+        </section>
+        <button id="reload-button">Reload</button>
+      </section>
+
+      <section class="search-section">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search by location/airport"
+        />
+        <button id="search-button">Search</button>
+        <button id="reset-button">Reset</button>
+      </section>
+
+      <section class="flight-info-section">
+        <span id="flight-type">Departure Information </span>
+        <span id="search-text-display">(Next Ten flights)</span>
+      </section>
+
+      <section id="flight-detail"></section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
